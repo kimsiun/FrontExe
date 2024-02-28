@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 가입</title>
-    <style>
-        #container{
-            width: 600px;
-            margin: 10px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/order.css">
+    
 </head>
 <body>
     <div id = "container">
@@ -17,25 +13,25 @@
         <form>
             <fieldset>
                 <legend>사용자 정보</legend>
-                <ul>
+                <ul id = "register">
                     <li>
-                        <label for = "uid">아이디</label>
+                        <label for = "uid"><b>아이디</b></label>
                         <input type="uid" id="uid" placeholder="4자~10자 사이, 공백없이" required>
                     </li>
                     <li>
-                        <label for = "uid">이메일</label>
+                        <label for = "uid"><b>이메일</b></label>
                         <input type = "text" id = "uemail">
                     </li>
                     <li>
-                        <label for = "uid">비밀번호</label>
+                        <label for = "uid"><b>비밀번호</b></label>
                         <input type="password" id="uqwd" placeholder="4자~10자 사이, 공백없이" required>
                     </li>
                     <li>
-                        <label for = "uid">비밀번호 확인</label>
+                        <label for = "uid"><b>비밀번호 확인</b></label>
                         <input type = "password" id = "pwd2">
                     </li>
                     <li>
-                        <label for = "uid">가입 경로</label>
+                        <label for = "uid"><b>가입 경로</b></label>
                         <select id="prod1">
                             <option value="blog" selected>블로그</option>
                             <option value="search">검색</option>
@@ -44,7 +40,7 @@
                         </select>
                     </li>
                     <li>
-                        <label for = "uid">메모</label>
+                        <label for = "uid"><b>메모</b></label>
                         <textarea name="umemo" id="memo" cols="40" rows="3"></textarea>
                     </li>
                 </ul>
