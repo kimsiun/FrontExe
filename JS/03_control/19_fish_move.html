@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel {
+            width: 500px;
+            height: 500px;
+            border: 3px solid #999;
+            position: relative;
+        }
+
+        #fish {
+            position: absolute;
+            left: 50px;
+            top: 200px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMComtentLoaded', () => {
+            const $fish = document.querySelector('#fish');
+            let x = 50;
+            let y = 200;
+
+            document.addEventListener('ketdown', function (e) {
+                console.log('입력 키 코드: ' + e.keyCode);
+                switch (e.keyCode) {
+                    case 37:
+                        break;
+                    case 37:
+                        break;
+                    case 37:
+                        break;
+                    case 37:
+                        break;
+
+                }
+            });
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="panel">
+        <img src="../../images2/fish.png" id="fish">
+    </div>
+</body>
+
+</html>
