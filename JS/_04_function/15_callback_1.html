@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callThreeTimes(callback){
+            // 다른 함수나 이벤트에 의해 호출되는 함수
+            for(let i=0; i<3; i++)
+                callback(i);    //함수를 전달받는 파라미터라느 ㄴ뜻이라고??
+        }
+
+        // 선언적 함수로 callback 함수 정의 
+        function print(i){
+            console.log(`${i}번째 함수 호출`);
+        }
+
+        callThreeTimes(print);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
