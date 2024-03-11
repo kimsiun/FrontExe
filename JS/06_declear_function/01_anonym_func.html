@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let anonym;
+
+        anonym = function(){
+            console.log('1번째 익명함수입니다.');
+        }
+
+        anonym = function(){
+            console.log('2번째 익명함수입니다.');
+        }
+
+        anonym();   // 2번째 익명함수입니다. (let의 특성)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
