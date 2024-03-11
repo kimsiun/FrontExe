@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let startHello = function(){
+        let addCount = function(){
             let count = 0;
-            setInterval(function){
-                console.log(`${count} 안녕하세요`);
-            },1000);
+            count++;
+            return count;
         }
+
+        console.log(`count=${addCount()}`);
+        console.log(`count=${addCount()}`);
+        console.log(`count=${addCount()}`);
     </script>
 </head>
 <body>
