@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 해당속성이 객체 안에 있을때 확인하는 방법
+        const object = {
+            name: '홍길동',
+            job: '활빈당',
+            age: 24
+        }
+
+        // 1번째 방법
+        if(object.name !== undefined)
+            console.log('name 속성이 있습니다');
+        else
+            console.log('name 속성이 없습니다.');
+
+        if(object.money !== undefined)
+            console.log('money 속성이 있습니다');
+        else
+            console.log('money 속성이 없습니다.');
+
+            console.log('');
+
+        // 2번째 방법
+        if(object.name)
+            console.log('name 속성이 있습니다');
+        else
+            console.log('name 속성이 없습니다.');
+
+        if(object.money)
+            console.log('money 속성이 있습니다');
+        else
+            console.log('money 속성이 없습니다.');
+
+        console.log('');
+
+        // 3번째 방법
+        !object.name || console.log('name 속성이 있습니다.');       // 앞이 트루면 뒤를 실행을 안하기 때문에 ! 반저을 줘서 앞을 false로 만들어서 뒤를 출력하도록 만든다.
+        !object.money || console.log('money 속성이 있습니다.');
+        
+        console.log('')
+        
+        // 이것도 됨
+        object.name && console.log('name 속성이 있습니다.');     
+        object.money && console.log('money 속성이 있습니다.');
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

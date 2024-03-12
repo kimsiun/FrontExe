@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',() => {
+            const a = document.querySelector('#a');
+            const b = document.querySelector('#b');
+
+            a.textContent = '<h1>testContent 속성</h1>';    // 텍스트 저장하듯이 해라(일반적인 문자열 처럼 저장이 됨)
+            b.innerHTML = '<h1>innerHTML 속성</h1>';        // 
+        });
+    </script>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+</body>
+</html>
